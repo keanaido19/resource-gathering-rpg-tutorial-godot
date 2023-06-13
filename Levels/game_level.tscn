@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvgt4y65jaao1"]
+
+[ext_resource type="PackedScene" uid="uid://bkbpmlibhhk3k" path="res://Characters/player.tscn" id="1_qhqvj"]
+[ext_resource type="PackedScene" uid="uid://dia4lyhn2fdex" path="res://Objects/Resources/resource_node_rock.tscn" id="2_yyodd"]
+
+[node name="GameLevel" type="Node2D"]
+y_sort_enabled = true
+
+[node name="Player" parent="." instance=ExtResource("1_qhqvj")]
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
+remote_path = NodePath("../../Camera2D")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+
+[node name="ResourceNode_Rock" parent="." instance=ExtResource("2_yyodd")]
+
+[node name="ResourceNode_Rock2" parent="." instance=ExtResource("2_yyodd")]
+position = Vector2(42, 30)
+
+[node name="ResourceNode_Rock3" parent="." instance=ExtResource("2_yyodd")]
+position = Vector2(-33, -9)
+
+[node name="ResourceNode_Rock4" parent="." instance=ExtResource("2_yyodd")]
+position = Vector2(48, -13)
