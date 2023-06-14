@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://iffvnidcrw7q"]
+
+[ext_resource type="Script" path="res://Objects/Resources/Pickups/pickup.gd" id="1_crh7r"]
+[ext_resource type="Resource" uid="uid://ca38ib4gs0fs6" path="res://Items/Resources/wooden_log.tres" id="2_870as"]
+[ext_resource type="Texture2D" uid="uid://chklvtb0b4scu" path="res://Art/Sprout Lands - Sprites - Basic pack/Objects/Basic tools and meterials 1.png" id="2_w75iy"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_f543k"]
+radius = 3.53553
+height = 9.8995
+
+[node name="Pickup_Wood" type="Area2D"]
+z_index = -5
+script = ExtResource("1_crh7r")
+resource_item = ExtResource("2_870as")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_w75iy")
+region_enabled = true
+region_rect = Rect2(32, 16, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = -0.785398
+scale = Vector2(1, 1)
+shape = SubResource("CapsuleShape2D_f543k")

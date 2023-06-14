@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="ResourceNodeType" load_steps=2 format=3 uid="uid://c2hvyrsm2lm60"]
+
+[ext_resource type="Script" path="res://Objects/Resources/Types/resource_node_type.gd" id="1_x1yx6"]
+
+[resource]
+script = ExtResource("1_x1yx6")
+display_name = "Choppable"

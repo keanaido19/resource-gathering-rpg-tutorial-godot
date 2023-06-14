@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dvgt4y65jaao1"]
+[gd_scene load_steps=4 format=3 uid="uid://dvgt4y65jaao1"]
 
 [ext_resource type="PackedScene" uid="uid://bkbpmlibhhk3k" path="res://Characters/player.tscn" id="1_qhqvj"]
 [ext_resource type="PackedScene" uid="uid://dia4lyhn2fdex" path="res://Objects/Resources/resource_node_rock.tscn" id="2_yyodd"]
+[ext_resource type="PackedScene" uid="uid://b0eokai86fjvm" path="res://Objects/Resources/resource_node_tree.tscn" id="3_74n7j"]
 
 [node name="GameLevel" type="Node2D"]
 y_sort_enabled = true
@@ -25,3 +26,12 @@ position = Vector2(-33, -9)
 
 [node name="ResourceNode_Rock4" parent="." instance=ExtResource("2_yyodd")]
 position = Vector2(48, -13)
+
+[node name="ResourceNode_Tree" parent="." instance=ExtResource("3_74n7j")]
+position = Vector2(72, 18)
+
+[node name="ResourceNode_Tree2" parent="." instance=ExtResource("3_74n7j")]
+position = Vector2(-25, 25)
+
+[node name="ResourceNode_Tree3" parent="." instance=ExtResource("3_74n7j")]
+position = Vector2(18, -23)

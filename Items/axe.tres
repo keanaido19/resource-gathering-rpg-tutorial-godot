@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="HarvestingTool" load_steps=3 format=3 uid="uid://dikvj6agw1bk7"]
+
+[ext_resource type="Resource" uid="uid://c2hvyrsm2lm60" path="res://Objects/Resources/Types/choppable.tres" id="1_cwh5g"]
+[ext_resource type="Script" path="res://Items/harvesting_tool.gd" id="1_njh04"]
+
+[resource]
+script = ExtResource("1_njh04")
+effected_node_types = Array[Resource("res://Objects/Resources/Types/resource_node_type.gd")]([ExtResource("1_cwh5g")])
+min_damage = 1
+max_damage = 1
+display_name = "Axe"

@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://dia4lyhn2fdex"]
+[gd_scene load_steps=4 format=3 uid="uid://dia4lyhn2fdex"]
 
 [ext_resource type="Texture2D" uid="uid://355odlk4uta1" path="res://Art/Sprout Lands - Sprites - Basic pack/Objects/Basic Grass Biom things 1.png" id="1_3qdt3"]
+[ext_resource type="Script" path="res://Objects/Resources/resource_node.gd" id="1_wgj8f"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hgqxd"]
 radius = 3.0
@@ -8,6 +9,7 @@ height = 14.0
 
 [node name="ResourceNode_Rock" type="StaticBody2D"]
 position = Vector2(24, 18)
+script = ExtResource("1_wgj8f")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_3qdt3")
