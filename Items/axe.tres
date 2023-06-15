@@ -6,6 +6,6 @@
 [resource]
 script = ExtResource("1_njh04")
 effected_node_types = Array[Resource("res://Objects/Resources/Types/resource_node_type.gd")]([ExtResource("1_cwh5g")])
-min_damage = 1
-max_damage = 1
+min_amount = 1
+max_amount = 1
 display_name = "Axe"

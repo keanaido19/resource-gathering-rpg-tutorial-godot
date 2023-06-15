@@ -34,12 +34,12 @@ func harvest(amount: int):
 func spawn_resource():
 	var pickup_instance: Pickup = pickup_type.instantiate() as Pickup
 	
-	level_parent.add_child(pickup_instance)
+	level_parent.call_deferred("add_child", pickup_instance)
 	pickup_instance.position = position
 	
 	var direction: Vector2 = Vector2(
 		randf_range(-1.0, 1.0),
-		randf_range(0.0, 1.0)		
+		randf_range(-1.0, 1.0)		
 	).normalized()
 	
 	pickup_instance.launch(launch_speed * direction, launch_duration)

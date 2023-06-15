@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ResourceItem" load_steps=3 format=3 uid="uid://dh01p1b1b0scy"]
+
+[ext_resource type="Script" path="res://Items/Resources/resource_item.gd" id="1_2x8t2"]
+[ext_resource type="Texture2D" uid="uid://7ejpmhdjat3l" path="res://Art/Sprout Lands - Sprites - Basic pack/Items/Wooden Stick.png" id="2_erteh"]
+
+[resource]
+script = ExtResource("1_2x8t2")
+display_name = "Wooden Stick"
+texture = ExtResource("2_erteh")

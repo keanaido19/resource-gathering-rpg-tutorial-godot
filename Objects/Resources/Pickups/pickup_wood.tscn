@@ -21,5 +21,4 @@ region_rect = Rect2(32, 16, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = -0.785398
-scale = Vector2(1, 1)
 shape = SubResource("CapsuleShape2D_f543k")

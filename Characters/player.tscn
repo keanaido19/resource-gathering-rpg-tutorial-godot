@@ -1034,8 +1034,8 @@ _data = {
 }
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vcq2x"]
-radius = 5.0
-height = 12.0
+radius = 4.0
+height = 10.0
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_o8n1d"]
 animation = &"idle_left"
@@ -1153,7 +1153,7 @@ graph_offset = Vector2(-78, -71.4386)
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_rpix7"]
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 motion_mode = 1
 script = ExtResource("1_3my61")
 equipped_item = ExtResource("2_62mvo")
@@ -1176,7 +1176,8 @@ libraries = {
 [node name="HandEquip" type="Node2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 2)
+position = Vector2(0, 4)
+rotation = 1.5708
 shape = SubResource("CapsuleShape2D_vcq2x")
 
 [node name="AnimationTree" type="AnimationTree" parent="."]

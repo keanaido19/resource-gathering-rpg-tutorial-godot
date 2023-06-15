@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6wqg3jidep4b"]
+
+[ext_resource type="Script" path="res://UI/ResourceItemDisplay.gd" id="1_j4lx6"]
+[ext_resource type="Texture2D" uid="uid://c5oorkjsud8jq" path="res://Art/Sprout Lands - Sprites - Basic pack/Items/Wooden Log.png" id="2_8meap"]
+
+[node name="ResourceItemDisplay" type="HBoxContainer"]
+script = ExtResource("1_j4lx6")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("2_8meap")
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "0"

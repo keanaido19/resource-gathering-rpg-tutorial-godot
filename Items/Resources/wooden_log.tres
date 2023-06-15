@@ -5,5 +5,5 @@
 
 [resource]
 script = ExtResource("1_6mobb")
-display_name = "Wooden Log "
+display_name = "Wooden Log"
 texture = ExtResource("2_0uula")

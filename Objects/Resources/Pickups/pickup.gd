@@ -8,14 +8,10 @@ class_name Pickup
 
 @export var resource_item: ResourceItem
 
-
 var launch_velocity: Vector2 = Vector2.ZERO
 var launch_duration: float = 0.0
 var time_since_launch: float = 0.0
-var is_launching: bool = false:
-	set(value):
-		is_launching = value
-		collision_shape.disabled = is_launching
+var is_launching: bool = false
 
 
 func _ready():
@@ -29,13 +25,16 @@ func _process(delta):
 	
 	if time_since_launch >= launch_duration:
 		is_launching = false
+		collision_shape.disabled = false
 
 
 func launch(velocity: Vector2, duration: float):
+	collision_shape = $CollisionShape2D
 	launch_velocity = velocity
 	launch_duration = duration
 	time_since_launch = 0.0
 	is_launching = true
+	collision_shape.disabled = true
 
 
 func _on_body_entered(body):

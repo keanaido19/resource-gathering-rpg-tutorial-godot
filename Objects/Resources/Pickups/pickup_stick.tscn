@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://drtrcn6usduf6"]
+
+[ext_resource type="Script" path="res://Objects/Resources/Pickups/pickup.gd" id="1_5fdt8"]
+[ext_resource type="Resource" uid="uid://dh01p1b1b0scy" path="res://Items/Resources/wooden stick.tres" id="2_kig1a"]
+[ext_resource type="Texture2D" uid="uid://chklvtb0b4scu" path="res://Art/Sprout Lands - Sprites - Basic pack/Objects/Basic tools and meterials 1.png" id="3_m3yq8"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5bg6e"]
+radius = 2.12132
+height = 9.8995
+
+[node name="pickup_stick" type="Area2D"]
+z_index = -5
+script = ExtResource("1_5fdt8")
+resource_item = ExtResource("2_kig1a")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.75, -0.75)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("3_m3yq8")
+region_enabled = true
+region_rect = Rect2(18, 18, 12, 12)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = -0.785398
+shape = SubResource("CapsuleShape2D_5bg6e")
